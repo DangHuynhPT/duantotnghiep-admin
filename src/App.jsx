@@ -1,14 +1,14 @@
-import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Router from "./Routers/Router";
-
+import { BrowserRouter } from 'react-router-dom'
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <Router />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+      ,
     </div>
   );
 }
